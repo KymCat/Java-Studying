@@ -1,4 +1,4 @@
-package Start.Array;
+package Start.array;
 
 public class ArrayDi2 {
     public static void main(String[] args) {

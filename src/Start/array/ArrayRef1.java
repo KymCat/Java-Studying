@@ -1,4 +1,4 @@
-package Start.Array;
+package Start.array;
 
 public class ArrayRef1 {
     public static void main(String[] args) {
