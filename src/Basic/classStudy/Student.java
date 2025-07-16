@@ -1,4 +1,4 @@
-package Basic.class1;
+package Basic.classStudy;
 
 public class Student {
     // 멤버변수 or 필드

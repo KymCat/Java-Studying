@@ -52,3 +52,32 @@ student1.grade);
 ```
 - 먼저 메모리에 있는 객체에 접근해야함
 - 객체에 접근하기 위해서는 `.`(dot)을 사용
+
+##
+### 객체 배열에 대한 이해
+```java
+Student[] students = new Student[2];
+```
+```
+[students] → (주소 005)
+             ┌────────────┐
+             │ null       │ 
+             │ null       │
+             └────────────┘
+```
+- 객체 배열 또는 클래스 배열
+- 객체 배열 선언시 주소가 할당
+- 배열 내부에 객체 할당을 해주지 않았기에 null이 저장
+
+```java
+students[0] = new Student();
+students[1] = new Student();
+```
+```
+[students] → (주소 X)
+             ┌────────────┐
+             │ [0] → 주소 A (Student 인스턴스 1)
+             │ [1] → 주소 B (Student 인스턴스 2)
+             └────────────┘
+```
+- 배열 원소에 객체 할당을 해주어야 nullPointerException 에러 없음
